@@ -44,3 +44,55 @@ h2 {
     align-items: center;
 }
 
+/* Game section */
+
+.main {
+    position: absolute;
+    top: 25%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr) 150px;
+    grid-template-rows: repeat(1, 1fr) 150px;
+}
+
+.rock {
+    background: url(../images/rock-hand.png) no-repeat center center;
+    grid-column-start: 3;
+}
+
+.paper {
+    background: url(../images/paper-hand.png) no-repeat center center;
+    grid-column-start: 5;
+    grid-row-start: 2;
+}
+
+.scissors {
+    background: url(../images/scissors-hand.png) no-repeat center center;
+    grid-column-start: 4;
+    grid-row-start: 4;
+}
+
+.lizard {
+    background: url(../images/lizard-hand.png) no-repeat center center;
+    grid-column-start: 2;
+    grid-row-start: 4;
+}
+
+.spock {
+    background: url(../images/spock-hand.png) no-repeat center center;
+    grid-column-start: 1;
+    grid-row-start: 2;
+}
+
+.btn {
+    height: 130px;
+    width: 130px;
+    border: 3px outset;
+    border-radius: 50%;
+    background-size: 100px 100px;
+    box-shadow: 2px 2px;
+}
+
+.btn:hover {
+    background-color: lightgreen;
+    outline: 15px solid rgba(138, 253, 138, 0.5);
+}
