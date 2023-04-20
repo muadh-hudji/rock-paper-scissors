@@ -113,3 +113,21 @@ h2 {
 .result-panel div {
     width: 50%;
 }
+
+/* Footer */
+
+footer {
+    position: absolute;
+    display: flex;
+    top: 780px;
+    bottom: 0;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: #000;
+    color: #e4e4e4;
+}
+
+footer p {
+    padding: 0 2%;
+}
