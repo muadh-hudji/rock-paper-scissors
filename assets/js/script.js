@@ -27,14 +27,16 @@ for(let button of buttons){
 
 function playGame(userChoice) {
     let compChoice = Math.floor(Math.random() * 5);
-    document.getElementsByClassName("rock").style.backgroundColor = "green";
+    document.getElementById(choices[userChoice]).style.backgroundColor = "green";
     // Disable other choices
     for(let i = 0; i < 5; i++){
-        if(i === userChoice){
+        if(i == userChoice){
 
             continue;
         }
-        document.getElementsByClassName(choices[i]).disabled = true;
+        document.getElementById(choices[i]).disabled = true;
+        document.getElementById(choices[i]).style.backgroundColor = "red";
+        document.getElementById(choices[i]).style.outline = "none";
     }
 
 }

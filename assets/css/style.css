@@ -62,30 +62,30 @@ h2 span {
     grid-template-rows: repeat(1, 1fr) 150px;
 }
 
-.rock {
+.btn--rock {
     background: url(../images/rock-hand.png) no-repeat center center;
     grid-column-start: 3;
 }
 
-.paper {
+.btn--paper {
     background: url(../images/paper-hand.png) no-repeat center center;
     grid-column-start: 5;
     grid-row-start: 2;
 }
 
-.scissors {
+.btn--scissors {
     background: url(../images/scissors-hand.png) no-repeat center center;
     grid-column-start: 4;
     grid-row-start: 4;
 }
 
-.lizard {
+.btn--lizard {
     background: url(../images/lizard-hand.png) no-repeat center center;
     grid-column-start: 2;
     grid-row-start: 4;
 }
 
-.spock {
+.btn--spock {
     background: url(../images/spock-hand.png) no-repeat center center;
     grid-column-start: 1;
     grid-row-start: 2;
