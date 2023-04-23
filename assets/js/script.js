@@ -14,6 +14,8 @@ for(let button of buttons){
         if(this.getAttribute("data-choice") < 5){
             let userChoice = this.getAttribute("data-choice");
             playGame(userChoice);
+        } else if(this.getAttribute("data-choice") == 5){
+            playagain();
         }
     })
 }
@@ -35,8 +37,8 @@ function playGame(userChoice) {
             continue;
         }
         document.getElementById(choices[i]).disabled = true;
-        document.getElementById(choices[i]).style.backgroundColor = "red";
-        document.getElementById(choices[i]).style.outline = "none";
+        document.getElementsByClassName("btn")[i].style.backgroundColor = "red";
+        document.getElementById(choices[i]).classList.remove("btn--btn");
     }
     calculateResult(userChoice, compChoice);
 }
@@ -167,9 +169,24 @@ function changeScore(result) {
 
 }
 
-function playagain(){
+/**
+ * Reset diabled buttons and start a new round
+ */
 
+function playagain(){
+    for(let i = 0; i < 5; i++) {
+        document.getElementById(choices[i]).disabled = false;
+        document.getElementById(choices[i]).classList.add("btn--btn");
+        document.getElementsByClassName("btn")[i].style.backgroundColor = "white";
+    }
+    document.getElementById('computer-choice').innerHTML = `Computer Choice`;
+    document.getElementById('round-result').innerHTML = `Result`;
+    document.getElementById('round-result').style.backgroundColor = "#e4e4e4";
 }
+
+/**
+ * Reset score and start a new game
+ */
 
 function resetGame(){
 
