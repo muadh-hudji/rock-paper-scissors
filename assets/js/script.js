@@ -148,10 +148,23 @@ function displayRoundResult(compChoice, result) {
         document.getElementById('round-result').innerHTML = `YOU ${result}`;
         document.getElementById('round-result').style.backgroundColor = "red";
     }
+    changeScore(result);
 }
 
-function changeScore() {
-    
+/**
+ * Increment score for win and lose
+ */
+
+function changeScore(result) {
+    if(result === "WIN") {
+        let oldwin = parseInt(document.getElementById('win').innerText);
+        document.getElementById('win').innerText = ++oldwin;
+    }
+    if(result === "LOSE") {
+        let oldlose = parseInt(document.getElementById('lose').innerText);
+        document.getElementById('lose').innerText = ++oldlose;
+    }
+
 }
 
 function playagain(){
