@@ -31,7 +31,7 @@ function playGame(userChoice) {
     // Disable other choices
     for(let i = 0; i < 5; i++){
         if(i == userChoice){
-
+            document.getElementById(choices[i]).disabled = true;
             continue;
         }
         document.getElementById(choices[i]).disabled = true;
@@ -41,9 +41,14 @@ function playGame(userChoice) {
     calculateResult(userChoice, compChoice);
 }
 
+/**
+ * The function compare the choices and
+ * produce a result.
+ */
+
 function calculateResult(userChoice, compChoice) {
     let result;
-    if(userChoice === compChoice){
+    if(userChoice == compChoice){
         result = "DRAW";
         displayRoundResult(compChoice, result);
     }
@@ -125,8 +130,24 @@ function calculateResult(userChoice, compChoice) {
     
 }
 
-function displayRoundResult() {
+/**
+ * Function to display the choice of the computer
+ * and roundresult.
+ */
 
+function displayRoundResult(compChoice, result) {
+    document.getElementById('computer-choice').innerHTML = `<img src="assets/images/${choices[compChoice]}-hand.png" width="110" height="80">`;
+
+    if(result === "DRAW"){
+        document.getElementById('round-result').innerHTML = `${result}`;
+        document.getElementById('round-result').style.backgroundColor = "yellow";
+    } else if(result === "WIN") {
+        document.getElementById('round-result').innerHTML = `YOU ${result}`;
+        document.getElementById('round-result').style.backgroundColor = "green";
+    } else {
+        document.getElementById('round-result').innerHTML = `YOU ${result}`;
+        document.getElementById('round-result').style.backgroundColor = "red";
+    }
 }
 
 function changeScore() {
