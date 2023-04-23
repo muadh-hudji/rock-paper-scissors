@@ -16,6 +16,8 @@ for(let button of buttons){
             playGame(userChoice);
         } else if(this.getAttribute("data-choice") == 5){
             playagain();
+        } else if(this.getAttribute("data-choice") == 6){
+            resetGame();
         }
     })
 }
@@ -189,5 +191,16 @@ function playagain(){
  */
 
 function resetGame(){
+    for(let i = 0; i < 5; i++) {
+        document.getElementById(choices[i]).disabled = false;
+        document.getElementById(choices[i]).classList.add("btn--btn");
+        document.getElementsByClassName("btn")[i].style.backgroundColor = "white";
+    }
+    document.getElementById('computer-choice').innerHTML = `Computer Choice`;
+    document.getElementById('round-result').innerHTML = `Result`;
+    document.getElementById('round-result').style.backgroundColor = "#e4e4e4";
+
+    document.getElementById('win').innerText = 0;
+    document.getElementById('lose').innerText= 0;
 
 }
