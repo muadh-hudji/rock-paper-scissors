@@ -19,7 +19,7 @@ for(let button of buttons){
         } else if(this.getAttribute("data-choice") == 6){
             resetGame();
         }
-    })
+    });
 }
 
 /**
