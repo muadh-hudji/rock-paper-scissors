@@ -178,8 +178,8 @@ function changeScore(result) {
 function playagain(){
     for(let i = 0; i < 5; i++) {
         document.getElementById(choices[i]).disabled = false;
-        document.getElementById(choices[i]).classList.add("btn--btn");
         document.getElementsByClassName("btn")[i].style.backgroundColor = "white";
+        document.getElementById(choices[i]).classList.add("btn--btn");
     }
     document.getElementById('computer-choice').innerHTML = `Computer Choice`;
     document.getElementById('round-result').innerHTML = `Result`;
