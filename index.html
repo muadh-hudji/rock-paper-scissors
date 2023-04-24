@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Raleway%7CRighteous" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Rock Paper Scissors</title>
 </head>
 <body>
+
+    <!-- Header section -->
     <header>
         <div class="name-box">
             <h1>Rock Paper Scissors Lizard Spock</h1>
@@ -24,27 +25,39 @@
             </div>
         </div>
     </header>
+
+    <!-- Game buttons -->
     <div class="main">
-        
             <button aria-label="rock" data-choice="0" class="btn--rock btn btn--btn" id="rock"></button>
             <button aria-label="paper" data-choice="1" class="btn--paper btn btn--btn" id="paper"></button>
             <button aria-label="scissors" data-choice="2" class="btn--scissors btn btn--btn" id="scissors"></button>
             <button aria-label="lizard" data-choice="3" class="btn--lizard btn btn--btn" id="lizard"></button>
             <button aria-label="spock" data-choice="4" class="btn--spock btn btn--btn" id="spock"></button>
-        
     </div>
+
+    <!-- Result panel -->
     <div id="result-panel">
         <div id="computer-choice">Computer Choice</div>
         <div id="round-result">Result</div>
     </div>
+
+    <!-- Control section -->
     <div class="control-area">
         <button type="submit" data-choice="5" class="btn">Play again</button>
         <button type="reset" data-choice="6" class="btn">Reset</button>
     </div>
+
+    <!-- Footer -->
     <footer>
         <h3>Rules</h3>
         <p>Rock beats scissors & lizard | Scissors beats paper and lizard | Paper beats rock and spock | Lizard beats paper and spock | Spock beats rock and scissors</p>
     </footer>
+
+    <!-- Link to Javascript -->
+    <noscript>
+        <h1>Rock Paper Scissors</h1>
+        <h1>Sorry, your browser does not support Javascript!</h1>
+    </noscript>
     <script src="assets/js/script.js"></script>
 </body>
 </html>
