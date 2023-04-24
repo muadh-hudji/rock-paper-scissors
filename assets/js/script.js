@@ -36,6 +36,7 @@ function playGame(userChoice) {
     for(let i = 0; i < 5; i++){
         if(i == userChoice){
             document.getElementById(choices[i]).disabled = true;
+            document.getElementById(choices[i]).classList.remove("btn--btn");
             continue;
         }
         document.getElementById(choices[i]).disabled = true;
