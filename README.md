@@ -39,12 +39,22 @@
 ### Validation Test
 
 - HTML
+    - No error or warnings were returned when passing the home page through [W3C validation](https://validator.w3.org/nu/?doc=https%3A%2F%2Fmuadh-hudji.github.io%2Frock-paper-scissors%2F)
 
 - CSS
+   - No error or warnings were returned when passing the home page through [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fmuadh-hudji.github.io%2Frock-paper-scissors%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
 
 - Javascript
+    - No Error were returned when passing the home page through.
+    - Warning about function declared within loops.
+    ![Report of lighthouse](https://github.com/muadh-hudji/rock-paper-scissors/blob/main/assets/images/javascript-validation.PNG)
 
 - Report of lighthouse
+    - Desktop
+    ![Report of lighthouse](https://github.com/muadh-hudji/rock-paper-scissors/blob/main/assets/images/lighthouse-desktop.PNG)
+
+    - Mobile
+    ![Report of lighthouse](https://github.com/muadh-hudji/rock-paper-scissors/blob/main/assets/images/lighthouse-mobile.PNG)
 
 ### Fixed Bugs
 
