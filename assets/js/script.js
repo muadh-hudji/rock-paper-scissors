@@ -31,7 +31,7 @@ for(let button of buttons){
 
 function playGame(userChoice) {
     let compChoice = Math.floor(Math.random() * 5);
-    document.getElementById(choices[userChoice]).style.backgroundColor = "green";
+    document.getElementById(choices[userChoice]).style.backgroundColor = "lightgreen";
     // Disable other choices
     for(let i = 0; i < 5; i++){
         if(i == userChoice){
@@ -40,7 +40,7 @@ function playGame(userChoice) {
             continue;
         }
         document.getElementById(choices[i]).disabled = true;
-        document.getElementsByClassName("btn")[i].style.backgroundColor = "red";
+        document.getElementsByClassName("btn")[i].style.backgroundColor = "#e4e4e4";
         document.getElementById(choices[i]).classList.remove("btn--btn");
     }
     calculateResult(userChoice, compChoice);
