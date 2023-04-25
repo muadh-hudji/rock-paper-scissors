@@ -11,9 +11,27 @@ The users of this game will enjoy thier time by challenging the computer and it 
 [Live link](https://muadh-hudji.github.io/rock-paper-scissors/)
 
 ## User Experience (UX)
+Story of Three different users, experiences the site (Beginner, familiar and expert)
+
+Beginner user experience:
+- The user will at the first time know what the site is about and the rules of the game.
+- The user want to know how to play the game, and will easly find out that the buttons on the game area are interactive and reacts when hovering or by clicking on them.
+- The user will be able to start new rounds by clicking on playAgain button, and start a new game by clicking on Reset button.
+
+Familiar user experience:
+- The user feels familiar with the website and understands the game.
+- The user is feeling challenged and wants to defeat the computer.
+
+Expert user experience:
+- The user is visiting the website to look after new versions of the game.
 
 ### Design
+The design of the site are chosed to be simple and compact to make it easy for the user to reach every button and information in the page. The buttons of the game are provided with images to simplify the understanding of what each button represents.
 
+### Languages used
+- HTML
+- CSS
+- Javascript
 
 ## Features
 
@@ -101,7 +119,7 @@ The site has been manually tested to ensure that everything in the site are work
     ![Report of lighthouse](https://github.com/muadh-hudji/rock-paper-scissors/blob/main/assets/images/lighthouse-mobile.PNG)
 
 ### Fixed Bugs
-- Background color of the game buttons when hovering gets lost after changing background colors in javascript, important rule is used to avoid overriding this property.
+- Hover background color affect gets overrided after changing background colors in javascript, important rule is used to avoid overriding this property.
 
 ### Unfixed Bugs
 - The warning about the function declared within loops in javascript remains.
