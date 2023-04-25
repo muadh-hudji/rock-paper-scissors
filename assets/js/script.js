@@ -141,7 +141,7 @@ function calculateResult(userChoice, compChoice) {
  */
 
 function displayRoundResult(compChoice, result) {
-    document.getElementById('computer-choice').innerHTML = `<img src="assets/images/${choices[compChoice]}-hand.png" width="110" height="80">`;
+    document.getElementById('computer-choice').innerHTML = `<img src="assets/images/${choices[compChoice]}-hand.png" width="110" height="80" alt="${choices[compChoice]}">`;
 
     if(result === "DRAW"){
         document.getElementById('round-result').innerHTML = `${result}`;
