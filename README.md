@@ -1,7 +1,10 @@
 ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
-# Rock Paper Scissors
+# Rock Paper Scissors lizard spock
 
+Rock paper scissors lizard spock is a game created for the people who wants enjoyment by challenging the computer in a decision game. The difference by playing against the computer and people is that the computer are not readable and makes the choices randomly, which makes the game fairer and more difficult. 
+
+The users of this game will enjoy thier time by challenging the computer and it will improve their mood during the day. The site will be targeted towards adult and children since it is a popular and simple game to understand.
 
 ![Responsice Mockup](https://github.com/muadh-hudji/rock-paper-scissors/blob/main/assets/images/rock-paper-scissors-mockup.PNG)
 
@@ -35,10 +38,9 @@
 - __Result panel__
 
     - The result of the round and the computer choice will be displayed in result panel. Information about what will be displayed in each part of the result panel will be shown before the user clicks on a game button.
+    - The choice of the computer will be displayed by an image when the user makes the choice. The result of the round will be displayed by text and color after comparing the choices. By displaying the result with different color makes it easier for the user to know the result of the round.
 
 ![Responsice Mockup](https://github.com/muadh-hudji/rock-paper-scissors/blob/main/assets/images/result-panel.PNG)
-
-    - The choice of the computer will be displayed by an image when the user makes the choice. The result of the round will be displayed by text and color after comparing the choices. By displaying the result with different color makes it easier for the user to know the result of the round.
 
 ![Responsice Mockup](https://github.com/muadh-hudji/rock-paper-scissors/blob/main/assets/images/result-panel2.PNG)
 
@@ -84,7 +86,7 @@ The site has been manually tested to ensure that everything in the site are work
 
 - Javascript
     - No Error were returned when passing the home page through (JSHint) validator.
-    - Warning about function declared within loops.
+    - Warning returned about function declared within loops.
 
     ![(JSHint) validator](https://github.com/muadh-hudji/rock-paper-scissors/blob/main/assets/images/javascript-validation.PNG)
 
