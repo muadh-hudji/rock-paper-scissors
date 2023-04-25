@@ -214,7 +214,7 @@ noscript {
     }
 
     .main {
-        grid-template-columns: repeat(1, 1fr) 80px;
+        grid-template-columns: repeat(1, 1fr) 100px;
         grid-template-rows: repeat(1, 1fr) 110px;
     }
 }
