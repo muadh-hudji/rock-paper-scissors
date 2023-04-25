@@ -15,7 +15,7 @@ Story of Three different users, experiences the site (Beginner, familiar and exp
 
 Beginner user experience:
 - The user will at the first time know what the site is about and the rules of the game.
-- The user want to know how to play the game, and will easly find out that the buttons on the game area are interactive and reacts when hovering or by clicking on them.
+- The user want to know how to play the game, and will easly find out that the buttons in the game area are interactive and reacts when hovering or by clicking on them.
 - The user will be able to start new rounds by clicking on playAgain button, and start a new game by clicking on Reset button.
 
 Familiar user experience:
@@ -26,7 +26,7 @@ Expert user experience:
 - The user is visiting the website to look after new versions of the game.
 
 ### Design
-The design of the site are chosed to be simple and compact to make it easy for the user to reach every button and information in the page. The buttons of the game are provided with images to simplify the understanding of what each button represents.
+The design of the site are chosed to be simple and compact to make it easy for the user to reach every button and information in the page. The buttons of the game are provided with images to simplify what each button represents.
 
 ### Languages used
 - HTML
@@ -49,7 +49,7 @@ The design of the site are chosed to be simple and compact to make it easy for t
     - The game area includes the five buttons of the game. The buttons are distributed in the area in a form of a pentagon to make the buttons clearly showed and to improve the appearance of the page.
     - Each button have a circle form with a background image of a hand in form of the choises(rock, paper, scissors, lizard and spock).
     - To enhance the gameplay experience, the buttons reacts by changing the color when hovering with the mouse or by clicking on them.
-    - The buttons will be disabled when the user clicks on a button to avoid several choises in same a game round.
+    - The buttons will be disabled when the user clicks on a button to avoid several choises at a same game round.
 
 ![Responsice Mockup](https://github.com/muadh-hudji/rock-paper-scissors/blob/main/assets/images/game-area.PNG)
 
